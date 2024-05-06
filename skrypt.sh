@@ -17,9 +17,8 @@ case $1 in
     done
     ;;
   --help | -h)
-    echo "--date | -d"
-    echo "--logs n | -l n"
-    echo "--help | -h"
+    echo "--date"
+    echo "--logs n"
     ;;
   *)
     echo "Invalid option: $1"
