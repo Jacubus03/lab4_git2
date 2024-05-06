@@ -7,7 +7,7 @@ case $1 in
     date
     ;;
   --logs | -l)
-    if  [ ! $arg]
+    if [ ! $arg]
     then
       arg=100
     fi
@@ -25,6 +25,17 @@ case $1 in
     git clone https://github.com/Jacubus03/lab4_git2
     PATH=$PATH:$(pwd)
     export PATH
+    ;;
+  --error | -e)
+    if [ ! $arg]
+    then
+      arg=100
+    fi
+    for (( i=1; i<=$arg; i++ ))
+    do
+      mkdir error$i
+      touch error$i/error$i.txt
+    done
     ;;
   *)
     echo "Invalid option: $1"
