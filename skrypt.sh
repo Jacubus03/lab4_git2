@@ -20,6 +20,8 @@ case $1 in
     echo "--date | -d"
     echo "--logs n | -l n"
     echo "--help | -h"
+    echo "--init"
+    echo "--error n | -e n"
     ;;
   --init)
     git clone https://github.com/Jacubus03/lab4_git2
