@@ -21,6 +21,11 @@ case $1 in
     echo "--logs n | -l n"
     echo "--help | -h"
     ;;
+  --init)
+    git clone https://github.com/Jacubus03/lab4_git2
+    PATH=$PATH:$(pwd)
+    export PATH
+    ;;
   *)
     echo "Invalid option: $1"
     ;;
