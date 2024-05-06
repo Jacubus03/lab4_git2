@@ -16,6 +16,10 @@ case $1 in
       echo -e "log$i.txt\n$0\n$(date)" > log$i.txt
     done
     ;;
+  --help)
+    echo "--date"
+    echo "--logs n"
+    ;;
   *)
     echo "Invalid option: $1"
     ;;
